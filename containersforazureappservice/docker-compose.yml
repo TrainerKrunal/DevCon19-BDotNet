@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  containersforazureappservice:
+    image: ${DOCKER_REGISTRY-}containersforazureappservice
+    build:
+      context: .\containersforazureappservice
+      dockerfile: Dockerfile

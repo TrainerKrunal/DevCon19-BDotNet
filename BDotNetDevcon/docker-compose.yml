@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bdotnetdevcon:
+    image: ${DOCKER_REGISTRY-}bdotnetdevcon
+    build:
+      context: .\BDotNetDevcon
+      dockerfile: Dockerfile
